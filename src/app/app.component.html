@@ -1,0 +1,416 @@
+<!-- <div id="main" class="container">
+  <form id="form" class="bg-light" action="">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm">
+          <label for="">Select Scheme</label>
+          <select type="text" class="form-control" ngModel>
+            <option *ngFor="let a of selectScheme">{{a.sno}}</option>
+          </select>
+        </div>
+        <div class="col-sm">
+          <label for="">Select Sub Scheme</label>
+          <select type="text" class="form-control" ngModel>
+            <option *ngFor="let b of subScheme">{{b.sno}}</option>
+          </select>
+        </div>
+        <div class="col-sm">
+          <label for="">SSC result Approval from date</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="col-sm">
+          <label for="">SSC result Approval from date</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="col-sm">
+          <label for="">Batch Type</label>
+          <select type="text" class="form-control" ngModel>
+            <option *ngFor="let c of batchType">{{c.sno}}</option>
+          </select>
+        </div>
+        <div class="col-sm">
+          <label for="">Select State</label>
+          <select type="text" class="form-control" ngModel>
+            <option *ngFor="let d of state">{{d.sno}}</option>
+          </select>
+        </div>
+        <div class="col-sm">
+          <label for="">Select Job Role</label>
+          <select type="text" class="form-control" ngModel>
+            <option *ngFor="let e of jobRole">{{e.sno}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-info m-btn apply-filter-btn">Apply</button>
+        <button class="btn btn-light color-primary">Reset</button>
+      </div>
+    </div>
+  </form>
+  <div id="right" class="buttons">
+    <button class="btn btn-info m-btn apply-filter-btn">Download Report <img class="image" src="../assets/download.png"
+        alt=""> </button>
+  </div>
+  <div id="form">
+    <table class="table table-striped">
+      <thead class="bg-secondary">
+        <tr>
+          <th scope="col">S no.</th>
+          <th scope="col">Scheme</th>
+          <th scope="col">Sub Scheme</th>
+          <th scope="col">Batch Name</th>
+          <th scope="col">Batch ID</th>
+          <th scope="col">Sector Name</th>
+          <th scope="col">Certificate Status</th>
+          <th scope="col">Marksheet Status</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+          <tr>
+          <td>8</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+          <tr>
+          <td>9</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+          <tr>
+          <td>10</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+          <tr>
+          <td>11</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+          <tr>
+          <td>12</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="#">Download <img class="image" src="../assets/Download1.webp" alt=""></a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div> -->
+
+
+<div id="main" class="container">
+  <form id="form" class="bg-light" action="">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm">
+          <label for="">Select Scheme</label>
+          <select type="text" class="form-control" ngModel>
+            <option *ngFor="let a of selectScheme">{{a.sno}}</option>
+          </select>
+        </div>
+        <div class="col-sm">
+          <label for="">Select Sub Scheme</label>
+          <select type="text" class="form-control" ngModel>
+            <option *ngFor="let b of subScheme">{{b.sno}}</option>
+          </select>
+        </div>
+        <div class="col-sm">
+          <label for="">Batch Type</label>
+          <select type="text" class="form-control" ngModel>
+            <option *ngFor="let c of batchType">{{c.sno}}</option>
+          </select>
+        </div>
+        <div class="col-sm">
+          <label for="">Select State</label>
+          <select type="text" class="form-control" ngModel>
+            <option *ngFor="let d of state">{{d.sno}}</option>
+          </select>
+        </div>
+        <div class="col-sm">
+          <label for="">Select Job Role</label>
+          <select type="text" class="form-control" ngModel>
+            <option *ngFor="let e of jobRole">{{e.sno}}</option>
+          </select>
+        </div>
+        <div class="col-sm">
+          <label for="">Assessment Type</label>
+          <select type="text" class="form-control" ngModel>
+            <option *ngFor="let f of assessmentType">{{f.sno}}</option>
+          </select>
+        </div>
+        <div class="col-sm">
+          <label for="">Proforma Invoice Status</label>
+          <select type="text" class="form-control" ngModel>
+            <option *ngFor="let g of invoiceStatus">{{g.sno}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-info m-btn apply-filter-btn">Apply</button>
+        <button class="btn btn-light color-primary">Reset</button>
+      </div>
+    </div>
+  </form>
+  <div id="form">
+    <div id="right" class="buttons">
+      <button class="btn btn-info m-btn apply-filter-btn">Download Report <img class="image"
+          src="../assets/download.png" alt=""> </button>
+    </div>
+    <table class="table table-striped">
+      <thead class="bg-secondary">
+        <tr>
+          <th scope="col">S no.</th>
+          <th scope="col">Scheme</th>
+          <th scope="col">Sub Scheme</th>
+          <th scope="col">Batch Name</th>
+          <th scope="col">Batch ID</th>
+          <th scope="col">Sector Name</th>
+          <th scope="col">Proforma Invoice Status</th>
+          <th scope="col">Assessment Type</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Proforma Invoice Verifed</a></td>
+          <td><a href="#">Assessment</a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Proforma Invoice Verifed</a></td>
+          <td><a href="#">Assessment</a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Proforma Invoice Verifed</a></td>
+          <td><a href="#">Assessment</a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Proforma Invoice Verifed</a></td>
+          <td><a href="#">Assessment</a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Proforma Invoice Verifed</a></td>
+          <td><a href="#">Assessment</a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Proforma Invoice Verifed</a></td>
+          <td><a href="#">Assessment</a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Proforma Invoice Generated</a></td>
+          <td><a href="#">Re- Assessment</a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Proforma Invoice Generated</a></td>
+          <td><a href="#">Re- Assessment</a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Proforma Invoice Generated</a></td>
+          <td><a href="#">Re- Assessment</a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Proforma Invoice Generated</a></td>
+          <td><a href="#">Re- Assessment</a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Proforma Invoice Generated</a></td>
+          <td><a href="#">Re- Assessment</a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Scheme 1</td>
+          <td>Sub- Scheme 1 </td>
+          <td>Batch Name 1</td>
+          <td>1203</td>
+          <td>Sector Name 1</td>
+          <td><a href="#">Proforma Invoice Generated</a></td>
+          <td><a href="#">Re- Assessment</a></td>
+          <td><a href="">View Details</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
